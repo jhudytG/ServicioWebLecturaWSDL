@@ -26,21 +26,21 @@
             <isset property="conf.dir"/>
         </condition>
     </target>
-    <target name="wsimport-client-ConversionSW" depends="wsimport-init">
-        <mkdir dir="${build.generated.dir}/jax-wsCache/ConversionSW"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ConversionSW" destdir="${build.generated.dir}/jax-wsCache/ConversionSW" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/ConversionSW/wsdl/localhost_8080/ServicioWebSOAP/ConversionSW.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/ServicioWebSOAP/ConversionSW?WSDL" xnocompile="true" xendorsed="true">
-            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/ConversionSW/wsdl/localhost_8080/ServicioWebSOAP/ConversionSW.wsdl"/>
-            <produces dir="${build.generated.dir}/jax-wsCache/ConversionSW"/>
+    <target name="wsimport-client-Operaciones" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Operaciones"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Operaciones" destdir="${build.generated.dir}/jax-wsCache/Operaciones" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Operaciones/wsdl/localhost_8080/WebServicioSOAP/Operaciones.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/WebServicioSOAP/Operaciones?WSDL" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Operaciones/wsdl/localhost_8080/WebServicioSOAP/Operaciones.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Operaciones"/>
         </wsimport>
         <copy todir="${build.generated.sources.dir}/jax-ws">
-            <fileset dir="${build.generated.dir}/jax-wsCache/ConversionSW">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Operaciones">
                 <include name="**/*.java"/>
             </fileset>
         </copy>
     </target>
-    <target name="wsimport-client-clean-ConversionSW" depends="-init-project">
-        <delete dir="${build.generated.sources.dir}/jax-ws/sw"/>
-        <delete dir="${build.generated.dir}/jax-wsCache/ConversionSW"/>
+    <target name="wsimport-client-clean-Operaciones" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/ws"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Operaciones"/>
     </target>
-    <target name="wsimport-client-generate" depends="wsimport-client-ConversionSW"/>
+    <target name="wsimport-client-generate" depends="wsimport-client-Operaciones"/>
 </project>

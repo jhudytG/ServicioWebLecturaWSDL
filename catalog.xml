@@ -2,4 +2,6 @@
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
     <system systemId="http://localhost:8080/ServicioWebSOAP/ConversionSW?WSDL" uri="src/conf/xml-resources/web-service-references/ConversionSW/wsdl/localhost_8080/ServicioWebSOAP/ConversionSW.wsdl"/>
     <system systemId="http://localhost:8080/ServicioWebSOAP/ConversionSW?xsd=1" uri="src/conf/xml-resources/web-service-references/ConversionSW/wsdl/localhost_8080/ServicioWebSOAP/ConversionSW.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/WebServicioSOAP/Operaciones?WSDL" uri="src/conf/xml-resources/web-service-references/Operaciones/wsdl/localhost_8080/WebServicioSOAP/Operaciones.wsdl"/>
+    <system systemId="http://localhost:8080/WebServicioSOAP/Operaciones?xsd=1" uri="src/conf/xml-resources/web-service-references/Operaciones/wsdl/localhost_8080/WebServicioSOAP/Operaciones.xsd_1.xsd"/>
 </catalog>

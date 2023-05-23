@@ -2,10 +2,10 @@
 <jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
   <services/>
   <clients>
-    <client name="ConversionSW">
-      <wsdl-url>http://localhost:8080/ServicioWebSOAP/ConversionSW?WSDL</wsdl-url>
-      <local-wsdl-file>localhost_8080/ServicioWebSOAP/ConversionSW.wsdl</local-wsdl-file>
-      <package-name>sw</package-name>
+    <client name="Operaciones">
+      <wsdl-url>http://localhost:8080/WebServicioSOAP/Operaciones?WSDL</wsdl-url>
+      <local-wsdl-file>localhost_8080/WebServicioSOAP/Operaciones.wsdl</local-wsdl-file>
+      <package-name>ws</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>
         <wsimport-option>
@@ -22,7 +22,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>http://localhost:8080/ServicioWebSOAP/ConversionSW?WSDL</wsimport-option-value>
+          <wsimport-option-value>http://localhost:8080/WebServicioSOAP/Operaciones?WSDL</wsimport-option-value>
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>xnocompile</wsimport-option-name>
